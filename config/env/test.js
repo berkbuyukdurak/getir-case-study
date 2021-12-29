@@ -7,7 +7,7 @@ module.exports = {
     },
     server: {
         port: process.env.port || 3000,
-        hostname: process.env.HOSTNAME || 'localhost'
+        hostname: process.env.host || 'localhost'
     },
     db: process.env.MONGODB_URI
 }
