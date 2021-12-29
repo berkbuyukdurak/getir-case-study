@@ -18,5 +18,9 @@
     "data_not_found": {
         "message": "No records were found within the specified date and count range.",
         "statusCode": 200
+    },
+    "onboarding": {
+        "message": "Welcome to the Getir Case Study Challenge!",
+        "statusCode": 200
     }
 }
