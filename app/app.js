@@ -2,7 +2,7 @@ const mongoConnector = require('../config/database/mongo_connector');
 const ApiError = require('./errors/error');
 const errorHandlerHelper = require('./helpers/error_handler_helper');
 const responseCodesAndMessages = require('./utils/constants/http_response_status_codes_and_messages.json');
-
+const router = require('./routes/router');
 
 const express = require('express');
 const cors = require('cors');
@@ -20,6 +20,11 @@ app.use(cors({
     methods: '*',
     origin: '*'
 }));
+
+/**
+ * Entry point of API
+ */
+app.use('/', router.use(errorHandlerHelper));
 
 
 /**

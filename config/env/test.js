@@ -6,7 +6,7 @@ module.exports = {
         timeout: 3000
     },
     server: {
-        port: process.env.PORT || 3000,
+        port: process.env.port || 3000,
         hostname: process.env.HOSTNAME || 'localhost'
     },
     db: process.env.MONGODB_URI
