@@ -6,6 +6,7 @@ const router = require('./routes/router');
 
 const express = require('express');
 const cors = require('cors');
+const _ = require('lodash');
 
 
 // Connectiong to the Database
@@ -31,8 +32,12 @@ app.use('/', router.use(errorHandlerHelper));
  * Catching undefined routes and returning an error
  */
 app.all('*', (req, res, next) => {
+    let invalidMethod = "";
     const message = "Requested URL --> " + req.originalUrl + " - " +responseCodesAndMessages.not_found.message;
-    next(new ApiError(message, responseCodesAndMessages.not_found.statusCode));
+    if(!_.isEqual(req.method, 'POST')){
+        invalidMethod = `Invalid Request Method! --> ${req.method} | `;
+    }
+    next(new ApiError(invalidMethod + message, responseCodesAndMessages.not_found.statusCode));
 });
 
 
