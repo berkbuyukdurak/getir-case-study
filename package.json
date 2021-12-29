@@ -6,6 +6,9 @@
   "jest": {
     "testPathIgnorePatterns": ["./config/env/test.js"]
   },
+  "engines": {
+    "node": ">14.0.0"
+  },
   "scripts": {
     "devStart": "nodemon ./app/server.js",
     "test": "jest"
