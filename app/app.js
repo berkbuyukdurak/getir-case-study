@@ -1,9 +1,12 @@
+const mongoConnector = require('../config/database/mongo_connector');
+const ApiError = require('./errors/error');
+const errorHandlerHelper = require('./helpers/error_handler_helper');
+const responseCodesAndMessages = require('./utils/constants/http_response_status_codes_and_messages.json');
+
+
 const express = require('express');
 const cors = require('cors');
 
-
-
-const mongoConnector = require('../config/database/mongo_connector');
 
 // Connectiong to the Database
 mongoConnector();
@@ -17,6 +20,19 @@ app.use(cors({
     methods: '*',
     origin: '*'
 }));
+
+
+/**
+ * Catching undefined routes and returning an error
+ */
+app.all('*', (req, res, next) => {
+    const message = "Requested URL --> " + req.originalUrl + " - " +responseCodesAndMessages.not_found.message;
+    next(new ApiError(message, responseCodesAndMessages.not_found.statusCode));
+});
+
+
+// Error Handler For the Requests
+app.use(errorHandlerHelper);
 
 
 
