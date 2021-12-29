@@ -32,10 +32,10 @@
     "lodash": "^4.17.21",
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.4",
+    "dotenv": "^10.0.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "dotenv": "^10.0.0",
     "jest": "^27.4.5",
     "nodemon": "^2.0.15"
   }
