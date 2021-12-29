@@ -1,0 +1,28 @@
+{
+  "name": "getir-case-study",
+  "version": "1.0.0",
+  "description": "A RESTful API with a signle endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon ./app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berkbuyukdurak/getir-case-study.git"
+  },
+  "author": "berkbuyukdurak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/berkbuyukdurak/getir-case-study/issues"
+  },
+  "homepage": "https://github.com/berkbuyukdurak/getir-case-study#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.4"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15"
+  }
+}
