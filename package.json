@@ -10,6 +10,7 @@
     "node": ">14.0.0"
   },
   "scripts": {
+    "prodStart": "node ./app/server.js",
     "devStart": "nodemon ./app/server.js",
     "test": "jest"
   },
