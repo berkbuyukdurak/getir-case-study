@@ -123,8 +123,6 @@ Time:        5.802 s, estimated 6 s
 Ran all test suites.
 ```
 
-### Unit
-
 ## License
 
 MIT
