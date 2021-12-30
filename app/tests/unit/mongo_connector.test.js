@@ -1,4 +1,4 @@
-const mongoConnector = require('../../config/database/mongo_connector');
+const mongoConnector = require('../../../config/database/mongo_connector');
 const mongoose = require('mongoose');
 
 jest.setTimeout(30000);
