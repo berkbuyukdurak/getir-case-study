@@ -66,7 +66,7 @@ If you want to run tests on the project, please use the following command.
 
 #### Onboarding
 ```
-GET <public-endpoint-url> or <localhost:8080>
+GET <public-endpoint-url> or <localhost:<8080 or your preferred port which can be changed from config/env/>>
 ```
 
 #### Fetch Data
