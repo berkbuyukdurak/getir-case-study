@@ -63,6 +63,12 @@ If you want to run tests on the project, please use the following command.
 :warning: Beware, this API only accepts POST requests with JSON format.
 
 ### API Rerefence
+
+#### Onboarding
+```
+GET <public-endpoint-url> or <localhost:8080>
+```
+
 #### Fetch Data
 
 ```
