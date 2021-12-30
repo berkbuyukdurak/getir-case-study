@@ -56,15 +56,18 @@ There are 2 ways to run this project.
 If you want to run tests on the project, please use the following command.
 
 ```bash
-    npm run test
+    npm test
 ```
 ## How to Use
 
-!! Beware, this API only accepts POST requests with JSON format.
+:warning: Beware, this API only accepts POST requests with JSON format.
 
-### API Usage
-Method --> POST /api/records
+### API Rerefence
+#### Fetch Data
 
+```
+  POST /api/records
+```
 
 #### Sample Request Body
 
@@ -99,7 +102,7 @@ Method --> POST /api/records
 ```
 
 ## Public Endpoint URL
-This API is deployed to the AWS. You can also use this link --> http://getirfetchapiwebapp-env.eba-i4mht8vn.us-east-2.elasticbeanstalk.com
+This API is deployed to the AWS. You can also use this link to make tests --> http://getirfetchapiwebapp-env.eba-i4mht8vn.us-east-2.elasticbeanstalk.com
 
 ## License
 
