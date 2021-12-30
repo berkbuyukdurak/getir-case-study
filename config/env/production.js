@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 module.exports = {
     app: {
         title: 'Production Environment',
@@ -9,5 +7,5 @@ module.exports = {
         port: process.env.port || 8080,
         hostname: process.env.host || 'localhost'
     },
-    db: process.env.MONGODB_URI
+    db: "mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true"
 }
