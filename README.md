@@ -101,19 +101,23 @@ If you want to run tests on the project, please use the following command.
 }
 ```
 
-## Public Endpoint URL
-This API is deployed to the AWS. You can also use this link to make tests --> http://getirfetchapiwebapp-env.eba-i4mht8vn.us-east-2.elasticbeanstalk.com
+## AWS - Public Endpoint URL
+* A simple pipeline is created on AWS to propagate changes on the project automaticly.
+* This app is deployed to the AWS. You can also use this link to make tests --> http://getirfetchapiwebapp-env.eba-i4mht8vn.us-east-2.elasticbeanstalk.com
 
 ## Test Results
 
-### Integration Test Results
+Integration and unit tests are conducted. Here is the results;
+
 ```
-Test Suites: 3 passed, 3 total
-Tests:       14 passed, 14 total
+Test Suites: 4 passed, 4 total
+Tests:       15 passed, 15 total
 Snapshots:   0 total
-Time:        5.758 s
+Time:        5.802 s, estimated 6 s
 Ran all test suites.
 ```
+
+### Unit
 
 ## License
 
