@@ -101,9 +101,9 @@ If you want to run tests on the project, please use the following command.
 }
 ```
 
-## AWS - Public Endpoint URL
+## AWS - Public Endpoint URL of the deployed API
 * A simple pipeline is created on AWS to propagate changes on the project automaticly.
-* This app is deployed to the AWS. You can also use this link to make tests --> http://getirfetchapiwebapp-env.eba-i4mht8vn.us-east-2.elasticbeanstalk.com
+* The public endpoint URL of the deployed API which is available for testing --> http://getirfetchapiwebapp-env.eba-i4mht8vn.us-east-2.elasticbeanstalk.com
 
 ## Test Results
 
