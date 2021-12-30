@@ -1,3 +1,5 @@
+const db_uri = require('../database/database_config.json');
+
 module.exports = {
     app: {
         title: 'Development Environment',
@@ -7,5 +9,5 @@ module.exports = {
         port: process.env.port || 3000,
         hostname: process.env.host || 'localhost'
     },
-    db: "mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true"
+    db: db_uri.MONGODB_URI
 }
