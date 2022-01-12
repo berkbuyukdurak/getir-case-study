@@ -107,10 +107,6 @@ GET <public-endpoint-url> or <localhost:<8080 or your preferred port which can b
 }
 ```
 
-## AWS - Public Endpoint URL of the deployed API
-* A simple pipeline is created on AWS to propagate changes on the project automaticly.
-* The public endpoint URL of the deployed API which is available for testing --> http://getirfetchapiwebapp-env.eba-i4mht8vn.us-east-2.elasticbeanstalk.com
-
 ## Test Results
 
 Integration and unit tests are conducted. Here is the results;
